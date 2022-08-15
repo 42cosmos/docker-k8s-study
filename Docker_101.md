@@ -12,8 +12,6 @@ FROM ubuntu:20.04
 FROM nginx:latest AS ngx
 ```
 
-
-
 ### COPY
 
 src 파일 or 디렉토리를 destination 경로에 복사
@@ -24,8 +22,6 @@ COPY <src>... <dest>
 COPY a.txt /some-directory/b.txt
 COPY my-directory /some-directory-2
 ```
-
-
 
 ### RUN
 
@@ -39,8 +35,6 @@ RUN ["executable-command", "parameter1", "parameter2"]
 RUN pip install torch
 RUN pip install -r requirements.txt
 ```
-
-
 
 ### CMD
 
@@ -57,8 +51,6 @@ CMD ["parameter1", "parameter2"] # ENTRYPOINT 와 함께 사용될 때
 CMD python main.py
 ```
 
-
-
 ### WORKDIR
 
 컨테이너 내 디렉토리를 지정하고, 그곳에서 Dockerfile에 기술했던 명령어가 수행
@@ -66,8 +58,6 @@ CMD python main.py
 ```dockerfile
 WORKDIR /path/workspace
 ```
-
-
 
 ### ENV
 
@@ -86,8 +76,6 @@ ENV LANG ko_KR.UTF-8
 ENV LANGUAGE ko_KR.UTF-8
 ENV LC_ALL ko_KR.UTF-8
 ```
-
-
 
 ### EXPOSE
 
